@@ -1,0 +1,53 @@
+{
+  "name": "Loopback_Auth_Master",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon .",
+    "mysql-autoupdate": "node bin/autoupdate.js",
+    "mysql-automigrate": "node bin/automigrate.js",
+    "posttest": "npm run lint && npm audit"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.5.2",
+    "ejs": "^3.0.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-component-passport": "^3.11.0",
+    "loopback-component-passport-c": "^1.6.8",
+    "loopback-component-storage": "^3.6.3",
+    "loopback-connector-mongodb": "^5.2.0",
+    "loopback-connector-mysql": "^5.4.2",
+    "morgan": "^1.9.1",
+    "passport": "^0.2.0",
+    "passport-facebook": "^1.0.3",
+    "passport-google-oauth": "^0.1.5",
+    "passport-ldapauth": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.1.2",
+    "passport-twitter": "^1.0.2",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "Complete Auth Using Loopback"
+}

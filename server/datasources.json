@@ -1,0 +1,41 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "meetsup",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  },
+  "EmailConnectorDS": {
+    "name": "EmailConnectorDS",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.mailtrap.io",
+        "secure": false,
+        "port": 2525,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "70d09e4c9537e5",
+          "pass": "0fe30736f56995"
+        }
+      }
+    ]
+  },
+  "mysqlDS": {
+    "host": "127.0.0.1",
+    "port": 8889,
+    "database": "loopbackTest",
+    "password": "root",
+    "name": "mysqlDS",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
